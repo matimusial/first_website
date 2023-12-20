@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>Aktualności :: Mateo's Hardware</title>
+		<meta name="description" content="Strona jest bazą danych polecanych komponentów komputerowych, są na niej instrukcję jak złożyć komputer, czym się kierować przy składaniu oraz to co jeszcze przyjdzie mi do głowy.">
+		<meta name="keywords" content="hardware,komputery,it">
+		<meta name="author" content="Mateusz Musiał">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			#title {
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				font-size: 60px;
+				letter-spacing: 0px;
+				word-spacing: 0px;
+				color: #ED0000;
+				font-weight: 700;
+				text-decoration: none;
+				font-style: italic;
+				font-variant: small-caps;
+				text-transform: none;
+				text-align: center;
+			}	
+			body {
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: scroll;
+				background-color: black;
+			}
+			#menu li {
+				display:block;
+				list-style-type:none;
+				border-bottom: 1px solid #6D6F7F;
+				padding: 5px 10px;
+			}
+			#menu li a {
+				text-decoration: none;
+				text-transform:uppercase;
+				font-weight:bold;
+				color: #ED0000;
+				font-size: 20px;
+			}
+			#menu {
+				float: left;
+			}
+			#menu li a:hover {
+				text-decoration:underline;
+			}
+			#stopka {
+				color: #AD0000;
+				float: right;
+				position: static;
+			}
+			.aart {
+				margin: 50px 230px 230px;
+				margin-bottom: 0px;
+			}
+			.art1 {
+				color: grey;
+				position: relative;
+				box-sizing: border-box;
+				float: left;
+				width: 70%;
+				padding: 10px;
+				text-decoration:none;
+			}
+			.monitor {
+				width: 18.5%;
+				position: relative;
+				box-sizing: border-box;
+				float: left;
+				top: 5px;
+				left: 5px;
+				color: #AD0000; 
+				text-align: left; 
+			}
+			.clear {
+				clear:both;
+			}
+			.art1 a {
+				color: grey;
+				text-decoration:none;
+			}
+			
+			@media (max-width:425px) {
+				#title {
+					font-size: 30px;
+					text-align: center;
+			}
+			}
+			@media (max-width:425px) {
+				#menu li a {
+					font-size: 11px;
+					display: inline-block;
+			}
+			}
+			@media (max-width:425px) {
+				#menu li {
+				display:inline-block;
+				list-style-type:none;
+				border-right: 1px solid #6D6F7F;
+				padding: 2px 4px;
+				border-bottom:none;
+			}
+			}
+			@media (max-width:425px) {
+				#wszystko {
+				margin-top: 0px;
+				padding-left: 0px;
+				margin-bottom: 0px;
+			}
+			}
+			@media (max-width:425px) {
+				.aart {
+				margin-left: 0px;
+				margin-right: 0px;
+				font-size: 10px;
+				margin-top: 0px;
+				margin-bottom: 1px;
+			}
+			}
+			@media (max-width:425px) {
+				.monitor {
+					width: 30%;
+					top:23px;
+			}
+			}
+			@media (max-width:425px) {
+				#stopka {
+					font-size: 12px;
+			}
+			}
+			@media (max-width:425px) {
+				#menu {
+					text-align: center;
+					float: none;
+			}
+			}
+			
+			@media (min-width:425px) and (max-width:768px) {
+				#title {
+					font-size: 42px;
+					text-align: center;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#menu li a {
+					font-size: 17px;
+					display: inline-block;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#menu li {
+				display:inline-block;
+				list-style-type:none;
+				border-right: 1px solid #6D6F7F;
+				padding: 4px 6px;
+				border-bottom:none;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#wszystko {
+				margin-top: 0px;
+				padding-left: 0px;
+				margin-bottom: 0px;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				.aart {
+				margin-left: 0px;
+				margin-right: 0px;
+				font-size: 10px;
+				margin-top: 10px;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				.monitor {
+					width: 30%;
+					top: 23px;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#stopka {
+					font-size: 15px;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#menu {
+					text-align: center;
+					float: none;
+			}
+			}
+			
+			@media (min-width:768px) and (max-width:1440px) {
+				#menu li a {
+					font-size: 17px;
+			}
+			}
+			@media (min-width:768px) and (max-width:1440px) {
+				#wszystko {
+					padding-left: 20px;
+			}
+			}
+			@media (min-width:768px) and (max-width:1440px) {
+				.aart {
+					margin-left: 185px;
+					font-size: 15px;
+			}
+			}
+			@media (min-width:768px) and (max-width:1440px) {
+				.monitor {
+					width: 30%;
+					top: 10px;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="title">Mateo's Hardware</h1>
+			<nav id="menu">
+				<ul id="wszystko">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aktualnosci.html">Aktualności</a></li>
+					<li><a href="mojkomputer.html">Mój komputer</a></li>
+					<li><a href="konto.html">Konto</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="main">
+			<div class="aart">
+				<img class="monitor" src="aktualnosci/monitor.jpg" alt="HP Omen X 25">
+				<h1 class="art1"><a href="art1.html">HP Omen X 25 - monitor dla graczy 240 Hz z G-Sync lub FreeSync.</a></h1>
+				<div class="clear"></div>
+			</div>
+			<div class="aart">
+				<img class="monitor" src="aktualnosci/antywirus.jpg" alt="Antywirus"> 
+				<h1 class="art1">Jaki antywirus najmniej obciąża system?</h1>
+				<div class="clear"></div>
+			</div>
+			<div class="aart">
+				<img class="monitor" src="aktualnosci/ram.jpg" alt="Ram"> 
+				<h1 class="art1">ADATA XPG Spectrix S40G - wydajne SSD z podświetleniem RGB LED.</h1>
+				<div class="clear"></div>
+			</div>
+			<div class="aart">
+				<img class="monitor" src="aktualnosci/yt.jpg" alt="Youtube"> 
+				<h1 class="art1">YouTube Music i YouTube Premium w Polsce - ile to kosztuje i co się zyskuje?</h1>
+				<div class="clear"></div>
+			</div>
+		</main>
+		<footer id="stopka">
+			<p>© Mateusz Musiał 2019</p>
+		</footer>
+	</body>
+</html>

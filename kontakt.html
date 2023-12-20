@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>Kontakt :: Mateo's Hardware</title>
+		<meta name="description" content="Strona jest bazą danych polecanych komponentów komputerowych, są na niej instrukcję jak złożyć komputer, czym się kierować przy składaniu oraz to co jeszcze przyjdzie mi do głowy.">
+		<meta name="keywords" content="hardware,komputery,it">
+		<meta name="author" content="Mateusz Musiał">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			#title {
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				font-size: 60px;
+				letter-spacing: 0px;
+				word-spacing: 0px;
+				color: #ED0000;
+				font-weight: 700;
+				text-decoration: none;
+				font-style: italic;
+				font-variant: small-caps;
+				text-transform: none;
+				text-align: center;
+			}	
+			body {
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: scroll;
+				background-color: black;
+			}
+			#menu li {
+				display:block;
+				list-style-type:none;
+				border-bottom: 1px solid #6D6F7F;
+				padding: 5px 10px;
+			}
+			#menu li a {
+				text-decoration: none;
+				text-transform:uppercase;
+				font-weight:bold;
+				color: #ED0000;
+				font-size:20px;
+			}
+			#menu {
+				float: left;
+			}
+			#menu li a:hover {
+				text-decoration:underline;
+			}
+			#stopka {
+				color: #AD0000;
+				position: absolute;
+				bottom: 0%; 
+				right: 1%;
+			}
+			#logowanko {
+				color: grey;
+				position: relative;
+				font-size: 40px;
+				float: left;
+			}
+			#rejestracja {
+				color: grey;
+				position: relative;
+				font-size: 40px;
+				float: right;
+			}
+			.clear {
+				clear:both;
+			}
+			#mapa {
+				float: right;
+				margin-right: 10%;
+				margin-top: 1%;
+				border: none;
+			}
+			#adres {
+				color: grey;
+				font-size: 30px;
+				margin-left: 25%;
+				margin-top: 1%;
+			}
+			.tekst {
+				font-size: 20px;
+				margin-left: 16%;
+				color: grey;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="title">Mateo's Hardware</h1>
+				<nav id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aktualnosci.html">Aktualności</a></li>
+						<li><a href="mojkomputer.html">Mój komputer</a></li>
+						<li><a href="konto.html">Konto</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</nav>
+		</header>
+		<main id="main">
+			<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.4977920103238!2d14.53653924710209!3d53.4501337581017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa095071e844ff%3A0x4aaaba327af21f5f!2sTechnobar!5e0!3m2!1spl!2spl!4v1559287000123!5m2!1spl!2spl" width="600" height="450" style="border:0" allowfullscreen></iframe> <!--validator wykrywa błąd, ale to jest ze strony googla-->
+			<h2 id="adres">Mateo's Hardware</h2>
+			<p class="tekst">Cyfrowa 6, 71-441 Szczecin</p>
+			<p class="tekst">Zazwyczaj jestem w szaro-zielonej polówce, siedzę od 12 do 16 przy stoliku.</p>
+		</main>
+		<footer id="stopka">
+			<p>© Mateusz Musiał 2019</p>
+		</footer>
+	</body>
+</html>

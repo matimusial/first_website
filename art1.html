@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>Konto :: Mateo's Hardware</title>
+		<meta name="description" content="Strona jest bazą danych polecanych komponentów komputerowych, są na niej instrukcję jak złożyć komputer, czym się kierować przy składaniu oraz to co jeszcze przyjdzie mi do głowy.">
+		<meta name="keywords" content="hardware,komputery,it">
+		<meta name="author" content="Mateusz Musiał">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			#title {
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				font-size: 60px;
+				letter-spacing: 0px;
+				word-spacing: 0px;
+				color: #ED0000;
+				font-weight: 700;
+				text-decoration: none;
+				font-style: italic;
+				font-variant: small-caps;
+				text-transform: none;
+				text-align: center;
+			}	
+			body {
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: scroll;
+				background-color: black;
+			}
+			#menu li {
+				display:block;
+				list-style-type:none;
+				border-bottom: 1px solid #6D6F7F;
+				padding: 5px 10px;
+			}
+			#menu li a {
+				text-decoration: none;
+				text-transform:uppercase;
+				font-weight:bold;
+				color: #ED0000;
+				font-size:20px;
+			}
+			#menu {
+				float: left;
+			}
+			#menu li a:hover {
+				text-decoration:underline;
+			}
+			.clear {
+				clear:both;
+			}
+			.artyk {
+				color: grey;
+				text-align: center;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			#main {
+				margin-right: 235px;
+				border: 1px solid #ED0000;
+				margin-left: 235px;
+			}
+			.mon {
+				width: 70%;
+				margin-left: 15%;
+				color: #AD0000; 
+				text-align: left; 
+			}
+			#stopka {
+				color: #AD0000;
+				float: right;
+				position: static;
+			}
+			
+			@media (max-width:425px) {
+				#title {
+					font-size: 30px;
+					text-align: center;
+			}
+			}
+			@media (max-width:425px) {
+				#menu li a {
+					font-size: 11px;
+					display: inline-block;
+			}
+			}
+			@media (max-width:425px) {
+				#menu li {
+				display:inline-block;
+				list-style-type:none;
+				border-right: 1px solid #6D6F7F;
+				padding: 2px 4px;
+				border-bottom:none;
+			}
+			}
+			@media (max-width:425px) {
+				#wszystko {
+				margin-top: 0px;
+				padding-left: 0px;
+				margin-bottom: 0px;
+			}
+			}
+			@media (max-width:425px) {
+				#stopka {
+					font-size: 12px;
+			}
+			}
+			@media (max-width:425px) {
+				#menu {
+					text-align: center;
+					float: none;
+			}
+			}
+			@media (max-width:425px) {
+				#main {
+					margin-left: 0px;
+					margin-right: 0px;
+			}
+			}
+			@media (max-width:425px) {
+				#ul {
+					padding-left: 0px;
+			}
+			}
+			
+			@media (min-width:425px) and (max-width:768px) {
+				#title {
+					font-size: 42px;
+					text-align: center;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#menu li a {
+					font-size: 17px;
+					display: inline-block;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#menu li {
+				display:inline-block;
+				list-style-type:none;
+				border-right: 1px solid #6D6F7F;
+				padding: 4px 6px;
+				border-bottom:none;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#wszystko {
+				margin-top: 0px;
+				padding-left: 0px;
+				margin-bottom: 0px;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#stopka {
+					font-size: 15px;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#menu {
+					text-align: center;
+					float: none;
+			}
+			}
+			@media (min-width:425px) and (max-width:768px) {
+				#main {
+					margin-left: 0px;
+					margin-right: 0px;
+			}
+			}
+			
+			@media (min-width:768px) and (max-width:1440px) {
+				#menu li a {
+					font-size: 17px;
+			}
+			}
+			@media (min-width:768px) and (max-width:1440px) {
+				#wszystko {
+					padding-left: 20px;
+			}
+			}
+			@media (min-width:768px) and (max-width:1440px) {
+				.aart {
+					margin-left: 185px;
+					font-size: 15px;
+			}
+			}
+			@media (min-width:768px) and (max-width:1440px) {
+				.monitor {
+					width: 30%;
+					top: 10px;
+			}
+			}
+			@media (min-width:768px) and (max-width:1440px) {
+				#main {
+					margin-left: 210px;
+					margin-right: 210px
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="title">Mateo's Hardware</h1>
+			<nav id="menu">
+				<ul id="ul">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aktualnosci.html">Aktualności</a></li>
+					<li><a href="mojkomputer.html">Mój komputer</a></li>
+					<li><a href="konto.html">Konto</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="main">
+			<p class="artyk">Omen X 25 to oficjalny monitor rozgrywek Overwatch League. Wersja z modułem G-Sync jest jednak zauważalnie droższa od modelu FreeSync.<p>
+			<img class="mon" src="art1/mon1.jpg" alt="monitor1">
+			<p class="artyk">W ofercie marki HP Omen znajdziemy dwa ciekawe monitory dla graczy – Omen 25 i Omen 27. Ostatnio producent poszerzył ofertę o kolejną konstrukcję, która szczególnie zainteresuje miłośników dynamicznych gier akcji.Mowa o modelu Omen X 25, w którym zastosowano 24,5-calową matrycę TN o rozdzielczości 1920 x 1080 px i częstotliwości odświeżania na poziomie aż 240 Hz. Dodatkowym atutem jest tutaj wsparcie dla technologii Nvidia G-Sync (Omen X25) lub AMD FreeSync (Omen X 25f), co powinno jeszcze bardziej poprawić płynność wyświetlanej animacji.</p>
+			<img class="mon" src="art1/mon2.jpg" alt="monitor2">
+			<p class="artyk">Zastosowany panel cechuje się typowymi kątami widzenia 170/160 stopni, ale za to oferuje czas reakcji na poziomie 1 ms (GtG), podświetlenie LED rzędu 400 cd/m2 i kontrast na poziomie 1000:1. Producent chwali się również dobrym odwzorowaniem barw (100% pokrycia palety sRGB).</p>
+			<img class="mon" src="art1/mon3.jpg" alt="monitor3">
+			<p class="artyk">Do dyspozycji oddano wejścia HDMI 1.4 oraz DisplayPort 1.2, a oprócz tego udostępniono złącze audio oraz hub z dwoma portami USB 3.0.</p>
+			<img class="mon" src="art1/mon4.jpg" alt="monitor4">
+			<p class="artyk">Zastosowana konstrukcja pozwala na regulację położenia ekranu w pionie o 130 mm oraz odchylenie o -5/+23 stopnie). Ciekawostką jest też podświetlenie Ambient Light (RGB).HP Omen X 25 trafi do sprzedaży w lipcu. Wersja z modułem G-Sync została wyceniona na 629 euro, natomiast wersja obsługująca technologię FreeSync jest dużo tańsza – jej cena ma wynosić 459 euro. Model ten jest również oficjalnym monitorem Overwatch League.</p>
+		</main>
+		<footer id="stopka">
+			<p>© Mateusz Musiał 2019</p>
+		</footer>
+	</body>	
+</html>

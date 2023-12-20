@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>Konto :: Mateo's Hardware</title>
+		<meta name="description" content="Strona jest bazą danych polecanych komponentów komputerowych, są na niej instrukcję jak złożyć komputer, czym się kierować przy składaniu oraz to co jeszcze przyjdzie mi do głowy.">
+		<meta name="keywords" content="hardware,komputery,it">
+		<meta name="author" content="Mateusz Musiał">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			#title {
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				font-size: 60px;
+				letter-spacing: 0px;
+				word-spacing: 0px;
+				color: #ED0000;
+				font-weight: 700;
+				text-decoration: none;
+				font-style: italic;
+				font-variant: small-caps;
+				text-transform: none;
+				text-align: center;
+			}	
+			body {
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: scroll;
+				background-color: black;
+			}
+			#menu li {
+				display:block;
+				list-style-type:none;
+				border-bottom: 1px solid #6D6F7F;
+				padding: 5px 10px;
+			}
+			#menu li a {
+				text-decoration: none;
+				text-transform:uppercase;
+				font-weight:bold;
+				color: #ED0000;
+				font-size:20px;
+			}
+			#menu {
+				float: left;
+			}
+			#menu li a:hover {
+				text-decoration:underline;
+			}
+			#stopka {
+				color: #AD0000;
+				position: absolute;
+				bottom: 0%; 
+				right: 1%;
+			}
+			#logowanko {
+				color: grey;
+				position: relative;
+				font-size: 40px;
+				float: left;
+			}
+			#rejestracja {
+				color: grey;
+				position: relative;
+				font-size: 40px;
+				float: right;
+			}
+			.clear {
+				clear:both;
+			}
+			#log {
+				width: 200px;
+				float: left;
+				margin-left: 15%;
+			}
+			#rej {
+				width: 250px;
+				float: right;
+				margin-right: 25%;
+			}
+			#formrej {
+				padding-left: 10%;
+				font-size: 20px;
+				line-height: 30px;
+			}
+			#formlog {
+				font-size: 20px;
+				line-height: 30px;
+			}
+			.czc {
+				color: grey;
+				margin-bottom: 0px;
+				margin-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="title">Mateo's Hardware</h1>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aktualnosci.html">Aktualności</a></li>
+					<li><a href="mojkomputer.html">Mój komputer</a></li>
+					<li><a href="konto.html">Konto</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="main">
+			<div id="log">
+				<p id="logowanko">Zaloguj się</p>
+				<form id="formlog">
+					<p class="czc">Login: </p><input type="text" required placeholder="login" style="font-size: 15px; height: 25px"><br>
+					<p class="czc">Hasło: </p><input type="password" required placeholder="hasło" style="font-size: 15px; height: 25px"><br>
+					<input type="submit" value="Wyślij" style="font-size: 15px; height: 30px; border-style: solid; border-width: 1px"><br>
+				</form>
+			</div>
+			<div id="rej">
+				<p id="rejestracja">Zarejestruj się</p>
+				<form id="formrej">
+					<p class="czc">Imię: </p><input type="text" required placeholder="imię" style="font-size: 15px; height: 25px"><br>
+					<p class="czc">Nazwisko: </p><input type="text" required placeholder="nazwisko" style="font-size: 15px; height: 25px"><br>
+					<p class="czc">Login: </p><input type="text" required placeholder="login" style="font-size: 15px; height: 25px"><br>
+					<p class="czc">Adres Email: </p><input type="email" required placeholder="adres email" style="font-size: 15px; height: 25px"><br>
+					<p class="czc">Hasło: </p><input type="password" required placeholder="hasło" style="font-size: 15px; height: 25px"><br>
+					<p class="czc">Ponowne hasło: </p><input type="password" required placeholder="ponowne hasło" style="font-size: 15px; height: 25px"><br>
+					<p class="czc">Województwo:</p>
+					<select style="font-size: 15px; height: 25px">
+						<option>dolnośląskie</option>
+						<option>kujawsko-pomorskie</option>
+						<option>lubelskie</option>
+						<option>lubuskie</option>
+						<option>łódzkie</option>
+						<option>małopolskie</option>
+						<option>mazowieckie</option>
+						<option>opolskie</option>
+						<option>podkarpackie</option>
+						<option>podlaskie</option>
+						<option>pomorskie</option>
+						<option>śląskie</option>
+						<option>świętokrzyskie</option>
+						<option>warmińsko-mazurskie</option>
+						<option>wielkopolskie</option>
+						<option>zachodniopomorskie</option>
+					</select>
+					<input type="submit" value="Wyślij" style="font-size: 15px; height: 30px; border-style: solid; border-width: 1px">
+					<input type="reset" value="Wyczyść" style="font-size: 15px; height: 30px; border-style: solid; border-width: 1px">
+				</form>
+			</div>
+		</main>
+		<footer id="stopka">
+			<p>© Mateusz Musiał 2019</p>
+		</footer>
+	</body>
+</html>
